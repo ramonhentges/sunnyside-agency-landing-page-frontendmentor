@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <div
+      class="flex flex-col bg-headerMobile sm:bg-headerDesktop bg-cover w-full p-10 h-toHeaderMobileImage sm:h-toHeaderDesktopImage"
+    >
+      <div class="flex flex-row justify-between items-center">
+        <div>
+          <image src="images/logo.svg" alt="sunnyside" />
+        </div>
+        <nav class="hidden sm:block">
+          <ul class="flex gap-12 items-center">
+            <li>
+              <a href="" class="font-barlow text-white text-base font-semibold"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="" class="font-barlow text-white text-base font-semibold"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="" class="font-barlow text-white text-base font-semibold"
+                >Projects</a
+              >
+            </li>
+
+            <li>
+              <a
+                href=""
+                class="font-barlow text-desaturatedBlue text-base font-semibold uppercase bg-white py-3 px-6 rounded-full hover:text-white hover:bg-opacity-30"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex flex-col items-center self-center mt-20">
+        <h1
+          class="text-white uppercase font-fraunces font-black text-4xl tracking-widest text-center"
+        >
+          We are creatives
+        </h1>
+        <image
+          class="mt-20"
+          src="images/icon-arrow-down.svg"
+          alt="arrow-down"
+        />
+      </div>
+    </div>
+
+    <section>
+      <article class="flex flex-col-reverse sm:flex-row items-center">
+        <div
+          class="flex flex-col w-full sm:w-1/2 px-10 gap-10 items-center sm:items-start py-20 sm:py-0"
+        >
+          <h2
+            class="font-fraunces font-black text-desaturatedBlue text-3xl text-center sm:text-left"
+          >
+            Transform your brand
+          </h2>
+          <p
+            class="font-barlow font-semibold text-sm text-darkGrayishBlue text-center sm:text-left"
+          >
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+
+          <a
+            href=""
+            class="font-fraunces uppercase font-bold text-sm tracking-wide text-darkBlue hover:text-desaturatedBlue rounded px-2 bg-yellow bg-opacity-50 hover:bg-opacity-100 h-2 items-end flex"
+            >Learn more</a
+          >
+        </div>
+
+        <image
+          src="images/desktop/image-transform.jpg"
+          class="w-full sm:w-1/2"
+        />
+      </article>
+
+      <article class="flex flex-col sm:flex-row items-center">
+        <image
+          src="images/desktop/image-stand-out.jpg"
+          class="w-full sm:w-1/2"
+        />
+
+        <div
+          class="flex flex-col w-full sm:w-1/2 px-10 gap-10 items-center sm:items-start py-20 sm:py-0"
+        >
+          <h2
+            class="font-fraunces font-black text-desaturatedBlue text-3xl text-center sm:text-left"
+          >
+            Stand out to the right audience
+          </h2>
+          <p
+            class="font-barlow font-semibold text-sm text-darkGrayishBlue text-center sm:text-left"
+          >
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+
+          <a
+            href=""
+            class="font-fraunces uppercase font-bold text-sm tracking-wide text-darkBlue hover:text-desaturatedBlue rounded px-2 bg-softRed bg-opacity-50 hover:bg-opacity-100 h-2 items-end flex"
+            >Learn more</a
+          >
+        </div>
+      </article>
+
+      <div class="flex flex-col sm:flex-row">
+        <article
+          class="flex flex-col items-center justify-end w-full gap-4 sm:w-1/2 bg-graphicDesignMobile bg-cover sm:bg-graphicDesignDesktop pb-24 sm:pb-10 px-20 h-750x1200 sm:h-720x600halfScreen bg-no-repeat"
+        >
+          <h2
+            class="font-fraunces font-black text-center text-xl text-darkCyan"
+          >
+            Graphic design
+          </h2>
+          <p
+            class="font-barlow font-semibold text-center text-sm text-darkCyan"
+          >
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </article>
+        <article
+          class="flex flex-col items-center justify-end w-full gap-4 sm:w-1/2 bg-photographyMobile bg-cover sm:bg-photographyDesktop pb-24 sm:pb-10 px-20 h-750x1200 sm:h-720x600halfScreen bg-no-repeat"
+        >
+          <h2
+            class="font-fraunces font-black text-center text-xl text-darkBlue"
+          >
+            Photography
+          </h2>
+          <p
+            class="font-barlow font-semibold text-center text-sm text-darkBlue"
+          >
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div
+      class="flex flex-col py-14 sm:py-28 px-10 sm:px-14 gap-10 items-center"
+    >
+      <h2
+        class="font-fraunces text-grayishBlue text-center uppercase text-lg tracking-widest"
+      >
+        Client testimonials
+      </h2>
+      <div class="flex flex-col sm:flex-row gap-10">
+        <div class="flex flex-col items-center gap-10 justify-between">
+          <image
+            src="images/image-emily.jpg"
+            class="rounded-full h-14"
+            alt="emily-photo"
+          />
+          <p
+            class="font-barlow text-sm font-semibold text-veryDarkGrayishBlue text-center"
+          >
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div class="flex flex-col gap-2 items-center">
+            <p class="font-fraunces text-desaturatedBlue text-lg font-black">
+              Emily R.
+            </p>
+            <p class="font-barlow text-grayishBlue text-xs">
+              Marketing Director
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-10 justify-between">
+          <image
+            src="images/image-thomas.jpg"
+            class="rounded-full h-14"
+            alt="thomas-photo"
+          />
+          <p
+            class="font-barlow text-sm font-semibold text-veryDarkGrayishBlue text-center"
+          >
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <div class="flex flex-col gap-2 items-center">
+            <p class="font-fraunces text-desaturatedBlue text-lg font-black">
+              Thomas S.
+            </p>
+            <p class="font-barlow text-grayishBlue text-xs">
+              Chief Operating Officer
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-10 justify-between">
+          <image
+            src="images/image-jennie.jpg"
+            class="rounded-full h-14"
+            alt="jennie-photo"
+          />
+          <p
+            class="font-barlow text-sm font-semibold text-veryDarkGrayishBlue text-center"
+          >
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <div class="flex flex-col gap-2 items-center">
+            <p class="font-fraunces text-desaturatedBlue text-lg font-black">
+              Jennie F.
+            </p>
+            <p class="font-barlow text-grayishBlue text-xs">Business Owner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Desktop images display -->
+    <div class="hidden sm:flex sm:flex-row">
+      <image class="w-1/4" src="images/desktop/image-gallery-milkbottles.jpg" />
+      <image class="w-1/4" src="images/desktop/image-gallery-orange.jpg" />
+      <image class="w-1/4" src="images/desktop/image-gallery-cone.jpg" />
+      <image class="w-1/4" src="images/desktop/image-gallery-sugarcubes.jpg" />
+    </div>
+
+    <!-- Mobile images display -->
+    <div class="sm:hidden">
+      <div class="flex flex-col">
+        <div class="flex flex-row">
+          <image
+            class="w-1/2"
+            src="images/mobile/image-gallery-milkbottles.jpg"
+          />
+
+          <image class="w-1/2" src="images/mobile/image-gallery-orange.jpg" />
+        </div>
+        <div class="flex flex-row">
+          <image class="w-1/2" src="images/mobile/image-gallery-cone.jpg" />
+          <image
+            class="w-1/2"
+            src="images/mobile/image-gallery-sugar-cubes.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="bg-footer py-16 flex flex-col gap-10 items-center">
+    <a href="#"><img src="images/footer-logo.svg" alt="Sunnyside’s logo" /></a>
+
+    <div class="flex flex-row gap-5"></div>
+
+    <div class="flex flex-row gap-5">
+      <a href="#" class="hover:filter hover:invert-[1] hover:brightness-0"
+        ><img src="images/icon-facebook.svg" alt="Sunnyside’s logo"
+      /></a>
+      <a href="#" class="hover:filter hover:invert-[1] hover:brightness-0"
+        ><img src="images/icon-instagram.svg" alt="Sunnyside’s logo"
+      /></a>
+      <a href="#" class="hover:filter hover:invert-[1] hover:brightness-0"
+        ><img src="images/icon-twitter.svg" alt="Sunnyside’s logo"
+      /></a>
+      <a href="#" class="hover:filter hover:invert-[1] hover:brightness-0"
+        ><img src="images/icon-pinterest.svg" alt="Sunnyside’s logo"
+      /></a>
+    </div>
+    <div>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ramon Hentges</a>.
+    </div>
+  </footer>
+</html>
