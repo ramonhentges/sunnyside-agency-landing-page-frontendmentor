@@ -149,17 +149,39 @@
           >
         </div>
 
-        <image
-          src="images/desktop/image-transform.jpg"
-          class="w-full sm:w-1/2"
-        />
+        <picture class="w-full sm:w-1/2">
+          <source
+            media="(max-width: 729px)"
+            srcset="images/mobile/image-transform.jpg"
+          />
+          <source
+            media="(min-width: 730px)"
+            srcset="images/desktop/image-transform.jpg"
+          />
+          <img
+            class="w-full"
+            src="images/desktop/image-transform.jpg"
+            alt="Three milk bottles"
+          />
+        </picture>
       </article>
 
       <article class="flex flex-col sm:flex-row items-center">
-        <image
-          src="images/desktop/image-stand-out.jpg"
-          class="w-full sm:w-1/2"
-        />
+        <picture class="w-full sm:w-1/2">
+          <source
+            media="(max-width: 729px)"
+            srcset="images/mobile/image-stand-out.jpg"
+          />
+          <source
+            media="(min-width: 730px)"
+            srcset="images/desktop/image-stand-out.jpg"
+          />
+          <img
+            class="w-full"
+            src="images/desktop/image-stand-out.jpg"
+            alt="Three milk bottles"
+          />
+        </picture>
 
         <div
           class="flex flex-col w-full sm:w-1/2 px-10 gap-10 items-center sm:items-start py-20 sm:py-0"
@@ -294,32 +316,66 @@
         </div>
       </div>
     </div>
-    <!-- Desktop images display -->
-    <div class="hidden sm:flex sm:flex-row">
-      <image class="w-1/4" src="images/desktop/image-gallery-milkbottles.jpg" />
-      <image class="w-1/4" src="images/desktop/image-gallery-orange.jpg" />
-      <image class="w-1/4" src="images/desktop/image-gallery-cone.jpg" />
-      <image class="w-1/4" src="images/desktop/image-gallery-sugarcubes.jpg" />
-    </div>
 
-    <!-- Mobile images display -->
-    <div class="sm:hidden">
-      <div class="flex flex-col">
-        <div class="flex flex-row">
-          <image
-            class="w-1/2"
-            src="images/mobile/image-gallery-milkbottles.jpg"
+    <div class="flex flex-col sm:flex-row">
+      <div class="flex flex-row">
+        <picture class="w-1/2 sm:w-1/4">
+          <source
+            media="(max-width: 729px)"
+            srcset="images/mobile/image-gallery-milkbottles.jpg"
           />
+          <source
+            media="(min-width: 730px)"
+            srcset="images/desktop/image-gallery-milkbottles.jpg"
+          />
+          <img
+            src="images/desktop/image-gallery-milkbottles.jpg"
+            alt="Three milk bottles"
+          />
+        </picture>
 
-          <image class="w-1/2" src="images/mobile/image-gallery-orange.jpg" />
-        </div>
-        <div class="flex flex-row">
-          <image class="w-1/2" src="images/mobile/image-gallery-cone.jpg" />
-          <image
-            class="w-1/2"
-            src="images/mobile/image-gallery-sugar-cubes.jpg"
+        <picture class="w-1/2 sm:w-1/4">
+          <source
+            media="(max-width: 729px)"
+            srcset="images/mobile/image-gallery-orange.jpg"
           />
-        </div>
+          <source
+            media="(min-width: 730px)"
+            srcset="images/desktop/image-gallery-orange.jpg"
+          />
+          <img src="images/desktop/image-gallery-orange.jpg" alt="One orange" />
+        </picture>
+      </div>
+      <div class="flex flex-row">
+        <picture class="w-1/2 sm:w-1/4">
+          <source
+            media="(max-width: 729px)"
+            srcset="images/mobile/image-gallery-cone.jpg"
+          />
+          <source
+            media="(min-width: 730px)"
+            srcset="images/desktop/image-gallery-cone.jpg"
+          />
+          <img
+            src="images/desktop/image-gallery-cone.jpg"
+            alt="Icecream cone"
+          />
+        </picture>
+
+        <picture class="w-1/2 sm:w-1/4">
+          <source
+            media="(max-width: 729px)"
+            srcset="images/mobile/image-gallery-sugar-cubes.jpg"
+          />
+          <source
+            media="(min-width: 730px)"
+            srcset="images/desktop/image-gallery-sugarcubes.jpg"
+          />
+          <img
+            src="images/desktop/image-gallery-sugarcubes.jpg"
+            alt="Sugar cubes"
+          />
+        </picture>
       </div>
     </div>
   </body>
