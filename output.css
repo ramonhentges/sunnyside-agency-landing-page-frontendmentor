@@ -621,15 +621,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-headerMobile {
-  background-image: url('/images/mobile/image-header.jpg');
+  background-image: url('images/mobile/image-header.jpg');
 }
 
 .bg-graphicDesignMobile {
-  background-image: url('/images/mobile/image-graphic-design.jpg');
+  background-image: url('images/mobile/image-graphic-design.jpg');
 }
 
 .bg-photographyMobile {
-  background-image: url('/images/mobile/image-photography.jpg');
+  background-image: url('images/mobile/image-photography.jpg');
 }
 
 .bg-cover {
@@ -817,16 +817,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.duration-100 {
-  transition-duration: 100ms;
-}
-
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 svg path {
@@ -874,22 +866,6 @@ svg path {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.hover\:duration-150:hover {
-  transition-duration: 150ms;
-}
-
-.hover\:duration-500:hover {
-  transition-duration: 500ms;
-}
-
-.hover\:duration-1000:hover {
-  transition-duration: 1000ms;
-}
-
-.hover\:duration-300:hover {
-  transition-duration: 300ms;
-}
-
 @media (min-width: 730px) {
   .sm\:block {
     display: block;
@@ -911,10 +887,6 @@ svg path {
     width: 50%;
   }
 
-  .sm\:w-1\/4 {
-    width: 25%;
-  }
-
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -924,15 +896,15 @@ svg path {
   }
 
   .sm\:bg-headerDesktop {
-    background-image: url('/images/desktop/image-header.jpg');
+    background-image: url('images/desktop/image-header.jpg');
   }
 
   .sm\:bg-graphicDesignDesktop {
-    background-image: url('/images/desktop/image-graphic-design.jpg');
+    background-image: url('images/desktop/image-graphic-design.jpg');
   }
 
   .sm\:bg-photographyDesktop {
-    background-image: url('/images/desktop/image-photography.jpg');
+    background-image: url('images/desktop/image-photography.jpg');
   }
 
   .sm\:py-0 {
