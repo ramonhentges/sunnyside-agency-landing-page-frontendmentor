@@ -27,103 +27,111 @@
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
-    <div
-      class="flex flex-col bg-headerMobile sm:bg-headerDesktop bg-cover w-full p-10 h-toHeaderMobileImage sm:h-toHeaderDesktopImage"
-    >
-      <div class="flex flex-row justify-between items-center">
-        <div>
-          <image src="images/logo.svg" alt="sunnyside" />
-        </div>
-        <!-- Desktop Menu -->
-        <nav class="hidden sm:block">
-          <ul class="flex gap-12 items-center">
-            <li>
-              <a href="" class="font-barlow text-white text-base font-semibold"
-                >About</a
-              >
-            </li>
-            <li>
-              <a href="" class="font-barlow text-white text-base font-semibold"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a href="" class="font-barlow text-white text-base font-semibold"
-                >Projects</a
-              >
-            </li>
-
-            <li>
-              <a
-                href=""
-                class="font-fraunces text-desaturatedBlue text-base font-semibold uppercase bg-white py-3 px-6 rounded-full hover:text-white hover:bg-opacity-30 transition duration-500"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <!-- Mobile Menu -->
-        <div class="block sm:hidden">
-          <div
-            id="menu"
-            class="hidden flex-col w-full absolute left-0 mt-12 px-10"
-          >
-            <div
-              class="self-end justify-self-end"
-              style="
-                border-bottom: 30px solid hsl(0, 0%, 100%);
-                border-left: 30px solid transparent;
-              "
-            ></div>
-            <nav class="flex flex-col gap-5 py-10 items-center bg-white">
-              <a
-                href="#"
-                class="font-barlow text-lg text-darkGrayishBlue hover:text-veryDarkGrayishBlue"
-                >About</a
-              >
-              <a
-                class="font-barlow text-lg text-darkGrayishBlue hover:text-veryDarkGrayishBlue"
-                href="#"
-                >Services</a
-              >
-              <a
-                class="font-barlow text-lg text-darkGrayishBlue hover:text-veryDarkGrayishBlue"
-                href="#"
-                >Projects</a
-              >
-              <a
-                class="font-fraunces font-semibold text-lg uppercase text-desaturatedBlue bg-yellow py-3 px-6 rounded-full hover:opacity-80"
-                href="#"
-                >Contact</a
-              >
-            </nav>
+    <header>
+      <div
+        class="flex flex-col bg-headerMobile sm:bg-headerDesktop bg-cover w-full p-10 h-toHeaderMobileImage sm:h-toHeaderDesktopImage"
+      >
+        <div class="flex flex-row justify-between items-center">
+          <div>
+            <image src="images/logo.svg" alt="sunnyside" />
           </div>
-          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-          <a
-            id="menuIcon"
-            href="javascript:void(0);"
-            class="text-white text-2xl"
-            onclick="toggleMenu()"
+          <!-- Desktop Menu -->
+          <nav class="hidden sm:block">
+            <ul class="flex gap-12 items-center">
+              <li>
+                <a
+                  href=""
+                  class="font-barlow text-white text-base font-semibold"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="font-barlow text-white text-base font-semibold"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="font-barlow text-white text-base font-semibold"
+                  >Projects</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href=""
+                  class="font-fraunces text-desaturatedBlue text-base font-semibold uppercase bg-white py-3 px-6 rounded-full hover:text-white hover:bg-opacity-30 transition duration-500"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Mobile Menu -->
+          <div class="block sm:hidden">
+            <div
+              id="menu"
+              class="hidden flex-col w-full absolute left-0 mt-12 px-10"
+            >
+              <div
+                class="self-end justify-self-end"
+                style="
+                  border-bottom: 30px solid hsl(0, 0%, 100%);
+                  border-left: 30px solid transparent;
+                "
+              ></div>
+              <nav class="flex flex-col gap-5 py-10 items-center bg-white">
+                <a
+                  href="#"
+                  class="font-barlow text-lg text-darkGrayishBlue hover:text-veryDarkGrayishBlue"
+                  >About</a
+                >
+                <a
+                  class="font-barlow text-lg text-darkGrayishBlue hover:text-veryDarkGrayishBlue"
+                  href="#"
+                  >Services</a
+                >
+                <a
+                  class="font-barlow text-lg text-darkGrayishBlue hover:text-veryDarkGrayishBlue"
+                  href="#"
+                  >Projects</a
+                >
+                <a
+                  class="font-fraunces font-semibold text-lg uppercase text-desaturatedBlue bg-yellow py-3 px-6 rounded-full hover:opacity-80"
+                  href="#"
+                  >Contact</a
+                >
+              </nav>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a
+              id="menuIcon"
+              href="javascript:void(0);"
+              class="text-white text-2xl"
+              onclick="toggleMenu()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center self-center mt-20">
+          <h1
+            class="text-white uppercase font-fraunces font-black text-4xl tracking-widest text-center"
           >
-            <i class="fa fa-bars"></i>
-          </a>
+            We are creatives
+          </h1>
+          <image
+            class="mt-20"
+            src="images/icon-arrow-down.svg"
+            alt="arrow-down"
+          />
         </div>
       </div>
-      <div class="flex flex-col items-center self-center mt-20">
-        <h1
-          class="text-white uppercase font-fraunces font-black text-4xl tracking-widest text-center"
-        >
-          We are creatives
-        </h1>
-        <image
-          class="mt-20"
-          src="images/icon-arrow-down.svg"
-          alt="arrow-down"
-        />
-      </div>
-    </div>
-
+    </header>
     <section>
       <article class="flex flex-col-reverse sm:flex-row items-center">
         <div
@@ -242,142 +250,149 @@
       </div>
     </section>
 
-    <div
-      class="flex flex-col py-14 sm:py-28 px-10 sm:px-14 gap-10 items-center"
-    >
-      <h2
-        class="font-fraunces text-grayishBlue text-center uppercase text-lg tracking-widest"
+    <section>
+      <div
+        class="flex flex-col py-14 sm:py-28 px-10 sm:px-14 gap-10 items-center"
       >
-        Client testimonials
-      </h2>
-      <div class="flex flex-col sm:flex-row gap-10">
-        <div class="flex flex-col items-center gap-10 justify-between">
-          <image
-            src="images/image-emily.jpg"
-            class="rounded-full h-14"
-            alt="emily-photo"
-          />
-          <p
-            class="font-barlow text-sm font-semibold text-veryDarkGrayishBlue text-center"
-          >
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
-          </p>
-          <div class="flex flex-col gap-2 items-center">
-            <p class="font-fraunces text-desaturatedBlue text-lg font-black">
-              Emily R.
+        <h2
+          class="font-fraunces text-grayishBlue text-center uppercase text-lg tracking-widest"
+        >
+          Client testimonials
+        </h2>
+        <div class="flex flex-col sm:flex-row gap-10">
+          <div class="flex flex-col items-center gap-10 justify-between">
+            <image
+              src="images/image-emily.jpg"
+              class="rounded-full h-14"
+              alt="emily-photo"
+            />
+            <p
+              class="font-barlow text-sm font-semibold text-veryDarkGrayishBlue text-center"
+            >
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
             </p>
-            <p class="font-barlow text-grayishBlue text-xs">
-              Marketing Director
-            </p>
+            <div class="flex flex-col gap-2 items-center">
+              <p class="font-fraunces text-desaturatedBlue text-lg font-black">
+                Emily R.
+              </p>
+              <p class="font-barlow text-grayishBlue text-xs">
+                Marketing Director
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="flex flex-col items-center gap-10 justify-between">
-          <image
-            src="images/image-thomas.jpg"
-            class="rounded-full h-14"
-            alt="thomas-photo"
-          />
-          <p
-            class="font-barlow text-sm font-semibold text-veryDarkGrayishBlue text-center"
-          >
-            Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
-          </p>
-          <div class="flex flex-col gap-2 items-center">
-            <p class="font-fraunces text-desaturatedBlue text-lg font-black">
-              Thomas S.
+          <div class="flex flex-col items-center gap-10 justify-between">
+            <image
+              src="images/image-thomas.jpg"
+              class="rounded-full h-14"
+              alt="thomas-photo"
+            />
+            <p
+              class="font-barlow text-sm font-semibold text-veryDarkGrayishBlue text-center"
+            >
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
             </p>
-            <p class="font-barlow text-grayishBlue text-xs">
-              Chief Operating Officer
-            </p>
+            <div class="flex flex-col gap-2 items-center">
+              <p class="font-fraunces text-desaturatedBlue text-lg font-black">
+                Thomas S.
+              </p>
+              <p class="font-barlow text-grayishBlue text-xs">
+                Chief Operating Officer
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="flex flex-col items-center gap-10 justify-between">
-          <image
-            src="images/image-jennie.jpg"
-            class="rounded-full h-14"
-            alt="jennie-photo"
-          />
-          <p
-            class="font-barlow text-sm font-semibold text-veryDarkGrayishBlue text-center"
-          >
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside. Highly recommended!
-          </p>
-          <div class="flex flex-col gap-2 items-center">
-            <p class="font-fraunces text-desaturatedBlue text-lg font-black">
-              Jennie F.
+          <div class="flex flex-col items-center gap-10 justify-between">
+            <image
+              src="images/image-jennie.jpg"
+              class="rounded-full h-14"
+              alt="jennie-photo"
+            />
+            <p
+              class="font-barlow text-sm font-semibold text-veryDarkGrayishBlue text-center"
+            >
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
             </p>
-            <p class="font-barlow text-grayishBlue text-xs">Business Owner</p>
+            <div class="flex flex-col gap-2 items-center">
+              <p class="font-fraunces text-desaturatedBlue text-lg font-black">
+                Jennie F.
+              </p>
+              <p class="font-barlow text-grayishBlue text-xs">Business Owner</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="flex flex-col sm:flex-row">
-      <div class="flex flex-row">
-        <picture class="w-1/2">
-          <source
-            media="(max-width: 729px)"
-            srcset="images/mobile/image-gallery-milkbottles.jpg"
-          />
-          <source
-            media="(min-width: 730px)"
-            srcset="images/desktop/image-gallery-milkbottles.jpg"
-          />
-          <img
-            src="images/desktop/image-gallery-milkbottles.jpg"
-            alt="Three milk bottles"
-          />
-        </picture>
+    <section>
+      <div class="flex flex-col sm:flex-row">
+        <div class="flex flex-row">
+          <picture class="w-1/2">
+            <source
+              media="(max-width: 729px)"
+              srcset="images/mobile/image-gallery-milkbottles.jpg"
+            />
+            <source
+              media="(min-width: 730px)"
+              srcset="images/desktop/image-gallery-milkbottles.jpg"
+            />
+            <img
+              src="images/desktop/image-gallery-milkbottles.jpg"
+              alt="Three milk bottles"
+            />
+          </picture>
 
-        <picture class="w-1/2">
-          <source
-            media="(max-width: 729px)"
-            srcset="images/mobile/image-gallery-orange.jpg"
-          />
-          <source
-            media="(min-width: 730px)"
-            srcset="images/desktop/image-gallery-orange.jpg"
-          />
-          <img src="images/desktop/image-gallery-orange.jpg" alt="One orange" />
-        </picture>
+          <picture class="w-1/2">
+            <source
+              media="(max-width: 729px)"
+              srcset="images/mobile/image-gallery-orange.jpg"
+            />
+            <source
+              media="(min-width: 730px)"
+              srcset="images/desktop/image-gallery-orange.jpg"
+            />
+            <img
+              src="images/desktop/image-gallery-orange.jpg"
+              alt="One orange"
+            />
+          </picture>
+        </div>
+        <div class="flex flex-row">
+          <picture class="w-1/2">
+            <source
+              media="(max-width: 729px)"
+              srcset="images/mobile/image-gallery-cone.jpg"
+            />
+            <source
+              media="(min-width: 730px)"
+              srcset="images/desktop/image-gallery-cone.jpg"
+            />
+            <img
+              src="images/desktop/image-gallery-cone.jpg"
+              alt="Icecream cone"
+            />
+          </picture>
+
+          <picture class="w-1/2">
+            <source
+              media="(max-width: 729px)"
+              srcset="images/mobile/image-gallery-sugar-cubes.jpg"
+            />
+            <source
+              media="(min-width: 730px)"
+              srcset="images/desktop/image-gallery-sugarcubes.jpg"
+            />
+            <img
+              src="images/desktop/image-gallery-sugarcubes.jpg"
+              alt="Sugar cubes"
+            />
+          </picture>
+        </div>
       </div>
-      <div class="flex flex-row">
-        <picture class="w-1/2">
-          <source
-            media="(max-width: 729px)"
-            srcset="images/mobile/image-gallery-cone.jpg"
-          />
-          <source
-            media="(min-width: 730px)"
-            srcset="images/desktop/image-gallery-cone.jpg"
-          />
-          <img
-            src="images/desktop/image-gallery-cone.jpg"
-            alt="Icecream cone"
-          />
-        </picture>
-
-        <picture class="w-1/2">
-          <source
-            media="(max-width: 729px)"
-            srcset="images/mobile/image-gallery-sugar-cubes.jpg"
-          />
-          <source
-            media="(min-width: 730px)"
-            srcset="images/desktop/image-gallery-sugarcubes.jpg"
-          />
-          <img
-            src="images/desktop/image-gallery-sugarcubes.jpg"
-            alt="Sugar cubes"
-          />
-        </picture>
-      </div>
-    </div>
+    </section>
   </body>
   <footer class="bg-footer py-16 flex flex-col gap-10 items-center">
     <a href="#"><img src="images/footer-logo.svg" alt="Sunnyside’s logo" /></a>
