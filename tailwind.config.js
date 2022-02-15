@@ -14,6 +14,7 @@ module.exports = {
         grayishBlue: "hsl(210, 4%, 67%)",
         white: "hsl(0, 0%, 100%)",
         footer: "#91d4c5",
+        background: "#fffbf8",
       },
       fontFamily: {
         barlow: ["Barlow"],
